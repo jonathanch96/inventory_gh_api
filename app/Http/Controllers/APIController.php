@@ -46,10 +46,10 @@ class APIController extends Controller
 
 			
 		}
-		if($request->total_item??0<count($data)){
+		//if($request->total_item??0<count($data)){
 			$response['success']="true";
 			$response['data']=$data;
-		}
+		//}
 		return json_encode($response);
 
 
